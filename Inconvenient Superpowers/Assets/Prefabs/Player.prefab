@@ -78,12 +78,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2033450733307056819}
-  jumpForce: 4
+  jumpForce: 13
+  movementSpeed: 15
   groundCheckPos: {fileID: 1995019420474723887}
   groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  edgePos: 9.6
+  deathPoint: -7.22
 --- !u!212 &2033450733307056829
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -178,7 +181,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
