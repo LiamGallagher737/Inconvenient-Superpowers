@@ -1,6 +1,8 @@
 using UnityEngine; using UnityEngine.UI; using System.Collections.Generic;
 public class SuperpowerManager : MonoBehaviour {
     [SerializeField] private Text countdownText;
+    [SerializeField] private AudioClip newPowerSFX;
+    [SerializeField] private AudioSource audioSource;
     public PlayerController player;
     private int countdown = 10;
     private void Start() {
@@ -58,5 +60,6 @@ public class SuperpowerManager : MonoBehaviour {
                 player.jumpForce = defaultJumpForce;
                 break;
         }
+        audioSource.PlayOneShot(newPowerSFX);
     }
 }

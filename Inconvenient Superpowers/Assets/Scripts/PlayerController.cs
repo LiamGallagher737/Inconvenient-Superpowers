@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private float edgePos = 9f;
     [Header("Death")] 
     [SerializeField] private float deathPoint = -7.22f;
+    [Header("Audio")]
+    [SerializeField] private AudioClip jumpSFX;
+    [SerializeField] private AudioSource audioSource;
     
     private float input;
     private bool jump;
@@ -61,6 +64,7 @@ public class PlayerController : MonoBehaviour {
         
         if (jump && IsTouchingGround()) { // Jumping
             rb.AddForce(Vector2.up*jumpForce, ForceMode2D.Impulse);
+            audioSource.PlayOneShot(jumpSFX);
             jump = false;
         }
         
