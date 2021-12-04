@@ -250,6 +250,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4b71864abfe9a94bb3ef468632b9d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 2033450733307056828, guid: 440d04855917cae43924bfa58b0ea82a, type: 3}
+  playerSpawnPos: {x: -3, y: -1.45, z: 0}
 --- !u!114 &685862480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,6 +266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformPrefab: {fileID: 1817863651682170161, guid: ff7b0169f2be4ef4d9da2a3f91cbb607, type: 3}
   mapSize: {x: 16, y: 8}
+  cam: {fileID: 519420032}
   platformDensity: 3
 --- !u!1 &926419794
 GameObject:
@@ -310,7 +313,7 @@ GameObject:
   - component: {fileID: 1056694001}
   - component: {fileID: 1056694000}
   - component: {fileID: 1056693999}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Start Platform 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,7 +432,7 @@ GameObject:
   - component: {fileID: 1469740197}
   - component: {fileID: 1469740196}
   - component: {fileID: 1469740195}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Start Platform 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -548,7 +551,7 @@ GameObject:
   - component: {fileID: 1622964314}
   - component: {fileID: 1622964313}
   - component: {fileID: 1622964312}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Start Platform 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
